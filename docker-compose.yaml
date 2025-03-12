@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+  mysql:
+    container_name: 'first-mutual-mysql'
+    image: 'mysql:latest'
+    environment:
+      - 'MYSQL_DATABASE=firstmutual'
+      - 'MYSQL_PASSWORD=pa55w0rd'
+      - 'MYSQL_ROOT_PASSWORD=pa55w0rd'
+    ports:
+      - '3306:3306'

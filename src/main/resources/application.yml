@@ -1,0 +1,16 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: first-mutual
+  datasource:
+    driver-class-name:  com.mysql.cj.jdbc.Driver
+    password: pa55w0rd
+    url: jdbc:mysql://localhost:3306/firstmutual?createDatabaseIfNotExist=true
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
